@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const SearchbarHeader = styled.header`
   top: 0;
   left: 0;
-  position: sticky;
+  // position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ export const Form = styled.form`
 export const Button = styled.button`
   width: 120px;
   height: 48px;
-
+  cursor: pointer;
   line-height: 100%;
   text-align: center;
   color: #ffffff;

@@ -12,7 +12,7 @@ export const ButtonLoad = styled.button`
 
   background: linear-gradient(180deg, #00cfff 0%, #3ed598 100%);
   box-shadow: 0px 2px 4px rgba(15, 218, 137, 0.3);
-
+  cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover,

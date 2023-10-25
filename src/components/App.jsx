@@ -9,7 +9,7 @@ import Searchbar from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from 'components/Button/Button';
 import { Loader } from 'components/Loader/Loader';
-
+import{BackToTopButton} from 'components/ArrowTopButton/ArrowTopButton'
 import { AppContent } from './App.module';
 
 const postApiService = new PostsApiService();
@@ -114,8 +114,9 @@ export class App extends Component {
         {loading && <Loader />}
         {isButtonShow && <Button onClick={this.onLoadMore} />}
 
-        {/* Additions  */}
+       
         <ToastContainer autoClose={3000} theme="dark" />
+       < BackToTopButton/>
       </AppContent>
     );
   }
