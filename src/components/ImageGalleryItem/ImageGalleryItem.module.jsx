@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const GalleryItem = styled.li`
-  position: relative;
+
   overflow: hidden;
 
   max-width: 400px;
