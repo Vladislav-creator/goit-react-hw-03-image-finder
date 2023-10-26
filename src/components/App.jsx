@@ -96,10 +96,11 @@ export class App extends Component {
     this.setState({ searchQuery });
   };
 
-  onLoadMore = () => {
+  onLoadMore = (e) => {
     this.setState(prevState => ({
       galleryPage: prevState.galleryPage + 1,
     }));
+    e.target.blur();
   };
 
   render() {
