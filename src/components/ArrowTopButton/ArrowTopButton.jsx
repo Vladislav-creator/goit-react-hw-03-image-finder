@@ -1,5 +1,6 @@
 import{ArrowTopButton} from './ArrowTopButton.module'
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 export function BackToTopButton() {
     const [backToTopButton, setBackToTopButton] = useState(false);
     useEffect(() => {
@@ -30,3 +31,7 @@ return (
 </div>
 );
 }
+
+ArrowTopButton.propTypes = {
+    onClick: PropTypes.func,
+  };
